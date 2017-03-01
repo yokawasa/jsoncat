@@ -1,0 +1,12 @@
+#!/bin/sh
+## Pretty Simple JSON Formatter Command
+
+if [ $# -gt 1 ]; then
+    echo "usage:\n(1) Recieve STDIN: $0 <jsonfile> or\n(2) Recieve an arg: cat <jsonfile> | jsoncat"
+    exit 1;
+fi
+if [ -p /dev/stdin ]; then 
+    cat -
+else
+    cat $1
+fi | python -mjson.tool| perl -Xpne 's/\\u([0-9a-fA-F]{4})/chr(hex($1))/eg'
