@@ -1,6 +1,4 @@
 #!/bin/sh
-## Pretty Simple JSON Formatter Command
-
 if [ $# -gt 1 ]; then
     echo "usage:\n(1) Recieve STDIN: $0 <jsonfile> or\n(2) Recieve an arg: cat <jsonfile> | jsoncat"
     exit 1;

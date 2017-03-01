@@ -1,5 +1,5 @@
 # jsoncat
-Pretty Simple JSON Formatter Command 
+Pretty Simple JSON Formatter Command. There are many kinds of jsoncat developed with many kinds of programming languages (see [Github](https://github.com/search?q=jsoncat)). This is a shell version.
 
 ## Usage
 You get json from a pipe to stdin like this:
